@@ -2,21 +2,54 @@
 
 import requests, sys
 
-def login(ip, port=80):
-	try:
-		r = requests.post('http://' + ip + ':' + str(port) + '/login/Auth', data={'username':'user', 'password':'user'}, allow_redirects=False)
-		print(r.cookies['password'])
-	except:
-		print('Connection Error!')
-		sys.exit()
-	if r.status_code == 302:
-		cookie = r.cookies['password']
-	else:
-		print('Unexpected status code %s! Something is wrong!' % (str(r.status_code)))
-		sys.exit()
-	return cookie
+class Tendown:
+    def login(self):
+        try:
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + '/login/Auth', data={'username':'user', 'password':'user'}, allow_redirects=False)
+        except:
+            raise ValueError('Connection Error!')
+            return 
+        if r.status_code == 302:
+            self.cookie = r.cookies['password']
+        else:
+            raise ValueError('Unexpected status code %s! Something is wrong!' % (str(r.status_code)))
 
-def update(firmware_name, ip, port=80):
-	return 0
+    def __init__(self, ip, port):
+        self.ip = ip
+        self.port = port
+        self.cookie = 'user'
+        login(self)
 
-login('192.168.0.1')
+    def post_request(self, url, pdata):
+        try:
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, data=pdata, allow_redirects=False)
+        except:
+            raise ValueError('Connection Error!')
+        if r.status_code != 200:
+            self.cookie = 'user'
+            login(self)
+        try:
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, data=pdata, allow_redirects=False)
+        except:
+            raise ValueError('Connection Error!')
+        if r.status_code != 200:
+            raise ValueError('Unexpected status code %s! Something is wrong!' % (str(r.status_code)))
+
+    def firmware_update(self, filename):
+        pdata = open(filename, 'rb').read()
+        try:
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, data=pdata, allow_redirects=False, headers={'Content-Type': 'application/octet-stream'})
+        except:
+            raise ValueError('Connection Error!')
+        if r.status_code != 200:
+            self.cookie = 'user'
+            login(self)
+        try:
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, data=pdata, allow_redirects=False, headers={'Content-Type': 'application/octet-stream'})
+        except:
+            raise ValueError('Connection Error!')
+        if r.status_code != 200:
+            raise ValueError('Unexpected status code %s! Something is wrong!' % (str(r.status_code)))
+
+if __name__ == "__main__":
+    print('test')
