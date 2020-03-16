@@ -1,0 +1,1094 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.02.21 09:49:57 =~=~=~=~=~=~=~=~=~=~=~=
+
+Booting...
+init_ram
+ 00000102 W init ddr ok
+
+DRAM Type: DDR2
+	DRAM frequency: 533MHz
+	DRAM Size: 64MB
+JEDEC id C84017, EXT id 0xc840
+found gd25q64
+flash vendor: GigaDevice
+gd25q64, size=8MB, erasesize=64KB, max_speed_hz=41000000Hz
+auto_mode=0 addr_width=3 erase_opcode=0x000000d8
+=>CPU Wake-up interrupt happen! GISR=89000004 
+ 
+---Realtek RTL8197F boot code at 2017.07.27-09:11+0800 v3.4.11B.9 (999MHz)
+Entry disaster mode
+Mac addr:d8-32-14-ee-f3-10
+lan_wan_isolation Initing...
+config: lan port mask is 0x000000f7
+config: wan port mask is 0x000000e8
+lan_wan_isolation Initing has been completed.
+lan_wan_isolation Initing...
+config: lan port mask is 0x000000f7
+config: wan port mask is 0x000000e8
+lan_wan_isolation Initing has been completed.
+<RealTek>
+<RealTek>?
+----------------- COMMAND MODE HELP ------------------
+HELP (?)                 : Print this help message
+DB <Address> <Len>
+DW <Address> <Len>
+EB <Address> <Value1> <Value2>...
+EW <Address> <Value1> <Value2>...
+CMP: CMP <dst><src><length>
+IPCONFIG:<TargetAddress>
+MEMCPY:<dst><src><length>
+AUTOBURN: 0/1
+LOADADDR: <Load Address>
+J: Jump to <TargetAddress>
+reboot
+FLI: Flash init
+FLR: FLR <dst><src><length>
+FLW <dst_ROM_offset><src_RAM_addr><length_Byte> <SPI cnt#>: Write to SPI
+MDIOR:  MDIOR phyid reg
+MDIOW:  MDIOW phyid reg data
+PHYR: PHYR <PHYID><reg>
+PHYW: PHYW <PHYID><reg><data>
+PHYPR: PHYPR <PHYID><page><reg>
+PHYPW: PHYPW <PHYID><page><reg><data>
+COUNTER: Dump Asic Counter
+XMOD <addr>  [jump] 
+TI : timer init 
+T : test 
+ETH : startup Ethernet
+CPUClk: 
+CP0
+ERASECHIP
+ERASESECTOR
+SPICLB (<flash ID>) : SPI Flash Calibration
+D8 <Address>
+E8 <Address> <Value>
+<RealTek>db
+Wrong argument number!
+<RealTek>t                                 tftp
+Unknown command !
+<RealTek>flr     ?
+----------------- COMMAND MODE HELP ------------------
+HELP (?)                 : Print this help message
+DB <Address> <Len>
+DW <Address> <Len>
+EB <Address> <Value1> <Value2>...
+EW <Address> <Value1> <Value2>...
+CMP: CMP <dst><src><length>
+IPCONFIG:<TargetAddress>
+MEMCPY:<dst><src><length>
+AUTOBURN: 0/1
+LOADADDR: <Load Address>
+J: Jump to <TargetAddress>
+reboot
+FLI: Flash init
+FLR: FLR <dst><src><length>
+FLW <dst_ROM_offset><src_RAM_addr><length_Byte> <SPI cnt#>: Write to SPI
+MDIOR:  MDIOR phyid reg
+MDIOW:  MDIOW phyid reg data
+PHYR: PHYR <PHYID><reg>
+PHYW: PHYW <PHYID><reg><data>
+PHYPR: PHYPR <PHYID><page><reg>
+PHYPW: PHYPW <PHYID><page><reg><data>
+COUNTER: Dump Asic Counter
+XMOD <addr>  [jump] 
+TI : timer init 
+T : test 
+ETH : startup Ethernet
+CPUClk: 
+CP0
+ERASECHIP
+ERASESECTOR
+SPICLB (<flash ID>) : SPI Flash Calibration
+D8 <Address>
+E8 <Address> <Value>
+<RealTek>reboot
+
+reboot.......
+
+Booting...
+init_ram
+ 00000102 W init ddr ok
+
+DRAM Type: DDR2
+	DRAM frequency: 533MHz
+	DRAM Size: 64MB
+JEDEC id C84017, EXT id 0xc840
+found gd25q64
+flash vendor: GigaDevice
+gd25q64, size=8MB, erasesize=64KB, max_speed_hz=41000000Hz
+auto_mode=0 addr_width=3 erase_opcode=0x000000d8
+=>CPU Wake-up interrupt happen! GISR=89000004 
+Reboot Result from Watchdog Timeout!
+
+---Realtek RTL8197F boot code at 2017.07.27-09:11+0800 v3.4.11B.9 (999MHz)
+Mac addr:d8-32-14-ee-f3-10
+lan_wan_isolation Initing...
+config: lan port mask is 0x000000f7
+config: wan port mask is 0x000000e8
+lan_wan_isolation Initing has been completed.
+lan_wan_isolation Initing...
+config: lan port mask is 0x000000f7
+config: wan port mask is 0x000000e8
+lan_wan_isolation Initing has been completed.
+wait for upgrage
+port[0] link:down
+port[1] link:down
+port[2] link:down
+port[3] link:down
+port[4] link:down
+irq:0x00008480
+Jump to image start=0x80a00000...
+decompressing kernel:
+Uncompressing Linux... done, booting the kernel.
+done decompressing kernel.
+start address: 0x80479500
+Linux version 3.10.90 (root@linux-bkb8) (gcc version 4.4.7 (Realtek MSDK-4.4.7 Build 2001) ) #4 Sun Feb 11 09:14:09 CST 2018
+bootconsole [early0] enabled
+CPU revision is: 00019385 (MIPS 24Kc)
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+Zone ranges:
+  Normal   [mem 0x00000000-0x03ffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00000000-0x03ffffff]
+Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+Kernel command line: console=ttyS0,115200 root=/dev/mtdblock4
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Writing ErrCtl register=00021330
+Readback ErrCtl register=00021330
+Memory: 41284k/65536k available (4602k kernel code, 24252k reserved, 2243k data, 192k init, 0k highmem)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:192
+Realtek GPIO IRQ init
+Calibrating delay loop... 666.41 BogoMIPS (lpj=3332096)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+<<<<<Register PCI Controller>>>>>
+Do MDIO_RESET
+40MHz
+Find PCIE Port, Device:Vender ID=b82210ec
+INFO: initializing USB devices ...
+enable port 0 two port enable
+port 0 org 0xe0=e2
+port 0 org 0xe1=31
+port 0 org 0xe2=39
+port 0 org 0xe4=98
+port 0 org 0xe6=c0
+port 1 org 0xe0=e2
+port 1 org 0xe1=31
+port 1 org 0xe2=39
+port 1 org 0xe4=98
+port 1 org 0xe6=c0
+patch new usb phy para for 40M OSC
+system  reg b8000010=0x80047000
+system  reg b8000014=0x118
+system  reg b8000160=0x1
+system  reg b8000164=0x0
+system  reg b8000168=0x0
+system  reg b800016c=0x280500
+system  reg b8000180=0x60000
+system  reg b8021094=0x200020
+system  reg b8140200=0xf002cc11
+system  reg b8140204=0x0
+system  reg b8140208=0x2010000
+system  reg b814020c=0x9b00
+system  reg b8140210=0xca00ca
+
+
+EHCI  reg b8021050=0x0
+EHCI  reg b8021054=0x2000
+EHCI  reg b8021058=0x2000
+OHCI  reg b8020000=0x110
+OHCI  reg b8020004=0x0
+port 0 reg e0=e2
+port 0 reg e1=31
+port 0 reg e2=33
+port 0 reg e3=8d
+port 0 reg e4=c9
+port 0 reg e5=19
+port 0 reg e6=c1
+port 0 reg e7=91
+port 0 reg f0=fc
+port 0 reg f1=8c
+port 0 reg f2=0
+port 0 reg f3=11
+port 0 reg f4=9b
+port 0 reg f5=4
+port 0 reg f6=0
+port 1 reg e0=e2
+port 1 reg e1=31
+port 1 reg e2=33
+port 1 reg e3=8d
+port 1 reg e4=c9
+port 1 reg e5=19
+port 1 reg e6=c1
+port 1 reg e7=91
+port 1 reg f0=fc
+port 1 reg f1=8c
+port 1 reg f2=0
+port 1 reg f3=11
+port 1 reg f4=9b
+port 1 reg f5=4
+port 1 reg f6=0
+Realtek GPIO controller driver init
+INFO: registering sheipa spi device
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+INFO: sheipa spi driver register
+INFO: sheipa spi probe
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Switching to clocksource MIPS
+NET: Registered protocol family 2
+TCP established hash table entries: 512 (order: 0, 4096 bytes)
+TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+TCP: Hash tables configured (established 512 bind 512)
+TCP: reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+fuse init (API version 7.22)
+msgmni has been set to 80
+io scheduler noop registered (default)
+Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x18147000 (irq = 17) is a 16550Aconsole [ttyS0] enabled, bootconsole disabled
+console [ttyS0] enabled, bootconsole disabled
+Realtek GPIO to I2C Driver Init...
+mfi_ioctl_init:565,dev=254,MINOR=0
+rtl819x_btn_probe: reset btn:54
+rtl819x_btn_probe: wps_btn:54
+rtl819x_btn_probe: wifi btn:56
+rtl819x_btn_probe: wps_btn:54
+rtl819x_led_probe: sys led:57
+rtl819x_led_probe: usb led:57
+rtl819x_led_probe: wps_led:33
+loop: module loaded
+m25p80 spi0.0: change speed to 15000000Hz, div 7
+JEDEC id C84017
+m25p80 spi0.0: found gd25q64, expected m25p80
+flash vendor: GigaDevice
+m25p80 spi0.0: gd25q64 (8192 Kbytes) (41000000 Hz)
+m25p80 spi0.0: change speed to 41000000Hz, div 3
+Kernel code size:0x206812
+7 rtkxxpart partitions found on MTD device m25p80
+Creating 7 MTD partitions on "m25p80":
+0x000000000000-0x000000800000 : "ALL"
+0x000000000000-0x000000020000 : "Bootloader"
+0x000000020000-0x000000030000 : "CFG"
+0x000000030000-0x0000007e0000 : "KernelFS"
+0x000000236812-0x0000007e0000 : "RootFS"
+0x0000007e0000-0x0000007f0000 : "CFM"
+0x0000007f0000-0x000000800000 : "CFM_BACKUP"
+PPP generic driver version 2.4.2
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+PPTP driver version 0.8.5
+Realtek WLAN driver - version 1.7 (2015-10-30)(SVN:exported)
+Adaptivity function - version 9.3.4
+Do MDIO_RESET
+40MHz
+Find PCIE Port, Device:Vender ID=b82210ec
+
+ found 8822B !!! 
+halmac_check_platform_api ==========>
+12089M
+HALMAC_MAJOR_VER = 0
+HALMAC_PROTOTYPE_VER = 0
+HALMAC_MINOR_VER = 0
+halmac_init_adapter_88xx ==========>
+halmac_init_adapter Succss 
+IS_RTL8822B_SERIES value8 = a 
+MACHAL_version_init
+
+
+#######################################################
+SKB_BUF_SIZE=4440 MAX_SKB_NUM=1024
+#######################################################
+
+MACHAL_version_init
+RFE TYPE =5
+
+
+#######################################################
+SKB_BUF_SIZE=3040 MAX_SKB_NUM=400
+#######################################################
+
+RFE TYPE =5
+RFE TYPE =5
+RFE TYPE =5
+RFE TYPE =5
+RFE TYPE =5
+u32 classifier
+nf_conntrack version 0.5.0 (645 buckets, 2580 max)
+[BM CORE     ]  INFO: online ip data hash table created, size = 199
+[BM CORE     ]  INFO: online_ip proc file created
+ipip: IPv4 over IPv4 tunneling driver
+gre: GRE over IPv4 demultiplexor driver
+ip_gre: GRE over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP: cubic registered
+NET: Registered protocol family 17
+l2tp_core: L2TP core driver, V2.0
+l2tp_ppp: PPPoL2TP kernel driver, V2.0
+8021q: 802.1Q VLAN Support v1.8
+Realtek FastPath:v1.03
+
+Probing RTL819X NIC-kenel stack size order[1]...
+eth0 added. vid=1 Member port 0x107...
+eth1 added. vid=2 Member port 0x108...
+[peth0] added, mapping to [eth1]...
+Realtek GPIO Driver for Flash Reload Default
+VFS: Mounted root (squashfs filesystem) readonly on device 31:4.
+Freeing unused kernel memory: 192K (806b0000 - 806e0000)
+umount: can't forcibly umount /tmp: Invalid argument
+mkdir: can't create directory '/var/run': File exists
+insmod: can't insert '/lib/modules/fastnat.ko': No such file or directory
+[BM CORE     ]  INFO: bm_init success
+[U2K MODULE  ]  INFO: bm_u2k_info_init success
+[MAC FILTER  ]  INFO: bm_mac_filter init success 
+[PRIVILEGE IP]  INFO: privilege ip init success
+qos qos_init 1736: qos module init success
+OS TYPE INIT FINISHED
+[URL FILTER  ]  INFO: url filter init success
+insmod: can't insert '/lib/modules/loadbalance.ko': No such file or directory
+udevd (922): /proc/922/oom_adj is deprecated, please use /proc/922/oom_score_adj instead.
+
+######## STARTING PROGRAM #########
+spawn-fcgi: child spawned successfully: PID: 934
+Give root password for system maintenance
+(or type Control-D for normal startup): no auto_discover
+argv[0] = cfmd
+argv[0] = netctrl
+netctrl
+cfmd
+init_core_dump 1917: rlim_cur = 0, rlim_max = 2147483647
+init_core_dump 1926: open core dump success
+init_core_dump 1935: rlim_cur = 5242880, rlim_max = 5242880
+cfms_apmib_init:line(482)
+flash_read:ret = 65536
+Read hw setting header failed!
+init_core_dump 1917: rlim_cur = 0, rlim_max = 2147483647
+init_core_dump 1926: open core dump success
+init_core_dump 1935: rlim_cur = 5242880, rlim_max = 5242880
+
+ flash_mib_compress_write DEFAULT_SETTING DONE, __[flash.c-6899]
+ flash_mib_compress_write CURRENT_SETTING DONE, __[flash.c-6968]
+ DEFAULT_SETTING hecksum_ok
+
+ CURRENT_SETTING hecksum_ok
+
+  __[flash.c-7122]setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+setMIB end...
+func:InitCfm begin load_mib....
+flash_read:ret = 65536
+crc = 6503ddd, newcrc = 6503ddd
+flash_read:ret = 65536
+crc = 4ba9047f, newcrc = 4ba9047f
+flash_read:ret = 65536
+crc = 4ba9047f, newcrc = 4ba9047f
+flash_to_file:open Policy failed.
+going to rewrite flash...
+open /etc/policy_bak.cfg failed.
+rewrite flash ok...
+failure to open policy source: /etc/policy.cfg
+right lan[2]:0
+right lan[1]:1
+right lan[0]:2
+right wan[0]:3
+main=>180:init server success.1..
+/bin/sh: can't create /proc/tenda_middle_layer_pid: Permission denied
+cfmd -> Bad_Sig_entry [18]...
+No need to start gpio thread.
+realtek .....load_kernel_modules... 
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+### set br0 mac [d8:32:14:ee:f3:10]###
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+ifconfig: SIOCSIFHWADDR: No such device
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+device vlan1 entered promiscuous mode
+device eth0 entered promiscuous mode
+cfmd -> Bad_Sig_entry [18]...
+br0: port 1(vlan1) entered listening state
+br0: port 1(vlan1) entered listening state
+cfmd -> Bad_Sig_entry [18]...
+br0       Link encap:Ethernet  HWaddr D8:32:14:EE:F3:10  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+eth0      Link encap:Ethernet  HWaddr D8:32:14:EE:F3:10  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:4 
+
+eth1      Link encap:Ethernet  HWaddr D8:32:14:EE:F3:19  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:4 
+
+vlan1     Link encap:Ethernet  HWaddr D8:32:14:EE:F3:10  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+cfmd -> Bad_Sig_entry [18]...
+bridge name	bridge id		STP enabled	interfaces
+br0		8000.d83214eef310	yes		vlan1
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+Sat Jan  1 00:00:00 UTC 2000
+cfmd -> Bad_Sig_entry [18]...
+cfmd -> Bad_Sig_entry [18]...
+Loading dnrd...
+killall: dnrd: no process killed
+cfmd -> Bad_Sig_entry [18]...
+[0;33m[compatibility:is_compatible:82] [0;32mThe software is compatible!
+[0m_eval 98: child process create success
+_start_time_check 181: time_check register success, register_pid = 1055
+_eval 98: child process create success
+_start_httpd 198: httpd register success, register_pid = 1056
+httpd
+_eval 98: child process create success
+_start_multiwan 262: _start_multiwan register success, register_pid = 1057
+_eval 94: child process status is 0
+_start_ucloud_v2 336: ucloud_v2 register success, register_pid = 1058
+_eval 94: child process status is 0
+_start_buisness_proc 362: buisness_proc register success, register_pid = 1059
+_eval 98: child process create success
+_start_auto_discover 216: _start_auto_discover register success, register_pid = 1060
+time_check
+business_proc
+auto_discover
+ucloud_v2
+multiWAN
+init_core_dump 1917: rlim_cur = 5242880, rlim_max = 5242880
+init_core_dump 1926: open core dump success
+init_core_dump 1935: rlim_cur = 5242880, rlim_max = 5242880
+init_core_dump 1917: rlim_cur = 5242880, rlim_max = 5242880
+init_core_dump 1926: open core dump success
+init_core_dump 1935: rlim_cur = 5242880, rlim_max = 5242880
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(54)]:[m		 enable:1
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(55)]:[m		 type:1
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(60)]:[m		 wday_en:1;1;1;1;1;1;1
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(61)]:[m		 start_time:02:00
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(62)]:[m		 end_time:05:30
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(63)]:[m		 max_speed:3
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(64)]:[m		 check_speed=3000
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(65)]:[m		 wan_ifnames:eth1
+[1;32m[TIMER_CHECK >>time_check_reboot_info_printf(66)]:[m		 default_time_check_reboot:1
+[1;32m[TIMER_CHECK >>time_check_power_info_printf(50)]:[m		 enable:0
+[1;32m[TIMER_CHECK >>time_check_power_info_printf(51)]:[m		 type:1
+[1;32m[TIMER_CHECK >>time_check_power_info_printf(56)]:[m		 wday_en:1;1;1;1;1;1;1
+[1;32m[TIMER_CHECK >>time_check_power_info_printf(57)]:[m		 start_time:00:00
+[1;32m[TIMER_CHECK >>time_check_power_info_printf(58)]:[m		 end_time:07:00
+[1;32m[TIMER_CHECK >>time_check_power_info_printf(59)]:[m		 max_speed:3
+[1;32m[TIMER_CHECK >>time_check_power_info_printf(60)]:[m		 check_speed=3000
+[wan_surf_check_init:1242] renew config of wan_surf_check
+wl2g_op:0 wl5g_op:0 
+fopen: No such file or directory
+######## RECEIVING DATA #########
+init_core_dump 1917: rlim_cur = 5242880, rlim_max = 5242880
+init_core_dump 1926: open core dump success
+init_core_dump 1935: rlim_cur = 5242880, rlim_max = 5242880
+
+
+Yes:
+
+      ****** WeLoveLinux****** 
+
+ Welcome to ...
+port[0] link down
+port[1] link down
+port[2] link down
+port[3] link down
+port[4] link down
+iptables v1.4.4: Couldn't find target `dns_drop'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+RTNETLINK answers: No such file or directory
+RTNETLINK answers: No such file or directory
+apmib_init ....in netctrl
+RTNETLINK answers: No such file or directory
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+open /proc/tdproc/lanip failed
+RTNETLINK answers: Operation not supported
+br0: port 1(vlan1) entered learning state
+/bin/sh: can't create /proc/br0_ip: Permission denied
+[U2K MODULE  ] ERROR: [31m[1muserspace msg type=17 error[0m
+/bin/sh: can't create /proc/conn_max: Permission denied
+[httpd][debug]----------------------------webs.c,157
+httpd listen ip = 192.168.0.1 port = 80
+webs: Listening for HTTP requests at address 192.168.0.1
+/bin/sh: can't create /proc/ctf/config/port_add: nonexistent directory
+/bin/sh: can't create /proc/ctf/config/port_add: nonexistent directory
+/bin/sh: can't create /proc/ctf/config/port_add: nonexistent directory
+ellipsis parameter
+Debug->tpi_port.[switch drv] users set port[3] to 0M_HD
+
+c: tpi_port_handle(61)--type = 0
+Debug->tpi_port.c: tpi_port_mode_set(12)--wan_num=1
+Debug->tpi_port.c: tpi_port_mode_set(14)--wan[0].portmode=0
+[1;32m[ DEBUG ] [m******Sucessed to change lan config! ******
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+rtl819x-ehci rtl819x-ehci: Realtek rtl819x On-Chip EHCI Host Controller
+rtl819x-ehci rtl819x-ehci: new USB bus registered, assigned bus number 1
+rtl819x-ehci rtl819x-ehci: irq 21, io mem 0x18021000
+rtl819x-ehci rtl819x-ehci: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+rtl819x-ohci rtl819x-ohci: Realtek rtl819x built-in OHCI controller
+rtl819x-ohci rtl819x-ohci: new USB bus registered, assigned bus number 2
+rtl819x-ohci rtl819x-ohci: irq 21, io mem 0x18020000
+add
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+add
+usbcore: registered new interface driver usb-storage
+cp: can't stat '/etc/smb.conf': No such file or directory
+[2000/01/01 00:00:03] log_init:1711: warn: unknown level in debug string: (null), use default_log_level.
+[1;32m[ DEBUG ] [m
+******radio_init ******
+##########################CC+++ RFE_TYPE[0] in FLASH
+ifname=wlan1
+ set MIB_HW_REG_DOMAIN =1
+odm[set_mib 3955]set odm,val=0x0
+br0: topology change detected, propagating
+br0: port 1(vlan1) entered forwarding state
+ifname=wlan1-va0
+ set MIB_HW_REG_DOMAIN =1
+odm[set_mib 3955]set odm,val=0x0
+[mac_vendor_init : 141] mac vendor list init OK!
+[1;33m[VENDOR_DEBUG _____check_vendor_network(131)______]:[mGet host error!
+vendor_task[171]    check vendor network failed! 
+arp task satrt:
+[1;32m[ DEBUG ] [mtmp_ssid =Tenda_EEF310
+[1;32m[ DEBUG ] [mtmp_ssid =Tenda_VIP
+[1;31m[ ERROR ] [mcoutry_code=US
+[1;32m[ DEBUG ] [m
+******radio_init ******
+ifname=wlan0
+ set MIB_HW_REG_DOMAIN =1
+[set_mib 3284]hex format
+odm[set_mib 3955]set odm,val=0x2a
+multiWAN -> Bad_Sig_entry [18]...ct = 9
+multiWAN -> Bad_Sig_entry [18]...ct = 8
+multiWAN -> Bad_Sig_entry [18]...ct = 7
+multiWAN -> Bad_Sig_entry [18]...ct = 6
+multiWAN -> Bad_Sig_entry [18]...ct = 5
+multiWAN -> Bad_Sig_entry [18]...ct = 4
+multiWAN -> Bad_Sig_entry [18]...ct = 3
+multiWAN -> Bad_Sig_entry [18]...ct = 2
+ifname=wlan0-va0
+ set MIB_HW_REG_DOMAIN =1
+[set_mib 3284]hex format
+odm[set_mib 3955]set odm,val=0x2a
+iptables v1.4.4: Couldn't find target `icmp_drop'
+
+Try `iptables -h' or 'iptables --help' for more information.
+multiWAN -> Bad_Sig_entry [18]...ct = 1
+iptables: No chain/target/match by that name.
+multiWAN -> Bad_Sig_entry [18]...ct = 0
+iptables: No chain/target/match by that name.
+wlan1     rf_pwr:-0,0
+iptables v1.4.4: Couldn't find target `access_ctrl'
+
+Try `iptables -h' or 'iptables --help' for more information.
+wlan0     rf_pwr:-0,0
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+[1;32m[ DEBUG ] [mtmp_ssid =Tenda_EEF310_5G
+[1;32m[ DEBUG ] [mtmp_ssid =Tenda_VIP_5G
+WlanSupportAbility = 0x3
+available channels[US]: 1 2 3 4 5 6 7 8 9 10 11 
+[ODM_software_init] 
+[97F] Bonding Type 97FS, PKG1
+[97F] RFE type 5 PHY paratemters: GPA1+GLNA1
+clock 40MHz
+load efuse ok
+rom_progress: 0x200006f
+rom_progress: 0x400006f
+###############ODM_ReadAndConfig_MP_8197F_CE_MAC_REG 
+############################rfe_type in hwconfig 5
+###############ODM_ReadAndConfig_MP_8197F_CE_PHY_REG 
+[GetHwReg88XX][PHY_REG_PG_8197Fmp_Type5] size
+[GetHwReg88XX][PHY_REG_PG_8197Fmp_Type5]
+############################rfe_type in hwconfig 5
+###############ODM_ReadAndConfig_MP_8197F_CE_AGC_TAB 
+jamtest reset RF
+###############ODM_ReadAndConfig_MP_8197F_CE_RadioA 
+###############ODM_ReadAndConfig_MP_8197F_CE_RadioB 
+[GetHwReg88XX][rtl8197Ffw]
+[GetHwReg88XX][rtl8197Ffw size]
+[GetHwReg88XX][TXPWR_LMT_8197Fmp_Type5]
+[97F] Default BB Swing=20
+gpio request error(-16)
+[kernel debug]Message received(1060):ello to kernel
+[kernel debug]eknetlink_rcv_msg exit.
+Register USB with RET: 0
+WlanSupportAbility = 0x3
+available channels[US]: 1 2 3 4 5 6 7 8 9 10 11 
+[ODM_software_init] 
+[97F] Bonding Type 97FS, PKG1
+[97F] RFE type 5 PHY paratemters: GPA1+GLNA1
+clock 40MHz
+load efuse ok
+rom_progress: 0x200006f
+rom_progress: 0x400006f
+###############ODM_ReadAndConfig_MP_8197F_CE_MAC_REG 
+############################rfe_type in hwconfig 5
+###############ODM_ReadAndConfig_MP_8197F_CE_PHY_REG 
+[GetHwReg88XX][PHY_REG_PG_8197Fmp_Type5] size
+[GetHwReg88XX][PHY_REG_PG_8197Fmp_Type5]
+############################rfe_type in hwconfig 5
+###############ODM_ReadAndConfig_MP_8197F_CE_AGC_TAB 
+jamtest reset RF
+###############ODM_ReadAndConfig_MP_8197F_CE_RadioA 
+###############ODM_ReadAndConfig_MP_8197F_CE_RadioB 
+[GetHwReg88XX][rtl8197Ffw]
+[GetHwReg88XX][rtl8197Ffw size]
+[GetHwReg88XX][TXPWR_LMT_8197Fmp_Type5]
+[97F] Default BB Swing=20
+gpio request error(-16)
+jamtest ++
+WlanSupportAbility = 0x3
+available channels[US]: 36 40 44 48 149 153 157 161 165 
+[hard_code_8822_mibs] +++ 
+MAX_RX_BUF_LEN = 4000 
+[ODM_software_init] 
+clock 40MHz
+InitPON OK!!!
+load efuse ok
+rom_progress: 0x200006f
+rom_progress: 0x400006f
+InitMAC Page0 
+Init Download FW OK 
+halmac_init_mac_cfg OK
+halmac_cfg_rx_aggregation OK
+halmac_init_mac_cfg OK
+[GetHwReg88XX][size PHY_REG_PG_8822Bmp_Type6]
+[GetHwReg88XX][PHY_REG_PG_8822Bmp_Type6]
+RL6302_MAC_PHY_Parameter_v018_20140708
+jamtest reset RF
+[GetHwReg88XX][TXPWR_LMT_8822Bmp_Type6]
+[set_8822_trx_regs] +++ 
+********************************
+8822 efuse content 0x3D7 = 0xf0
+8822 efuse content 0x3D8 = 0xf3
+********************************
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+device wlan1 entered promiscuous mode
+br0: port 2(wlan1) entered listening state
+br0: port 2(wlan1) entered listening state
+device wlan0 entered promiscuous mode
+br0: port 3(wlan0) entered listening state
+br0: port 3(wlan0) entered listening state
+[1;31m[ ERROR ] [mSIOCGIFFLAGS error!
+ifconfig: up: error fetching interface information: Device not found
+set_mib   no private ioctls.
+
+[1;31m[ ERROR ] [minvalid access mode:
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `guest_access_input'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `guest_access_forward'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+******************
+sysconf wlanapp start wlan1 wlan0 
+***************
+write_proc: file: 837a3780, buffer: 0
+, count: 2, data: 81831f10
+release wps led gpio
+------------------------>Wifi set led status 4 g_smart 1
+###fd failed to recv packet!###
+##### NO SERVER FOUND! #####
+------------------------>Wifi set led status 4 g_smart 1
+write_proc: file: 82f50dc0, buffer: 0
+, count: 2, data: 82fc1f10
+release wps led gpio
+------------------------>Wifi set led status 4 g_smart 1
+------------------------>Wifi set led status 4 g_smart 1
+Init Wlan application...
+
+WiFi Simple Config v2.20-wps2.0 (2018.02.11-01:15+0000).
+
+br0: port 2(wlan1) entered learning state
+br0: port 3(wlan0) entered learning state
+Tenda ACS selected channel: 40
+Tenda ACS selected channel: 1
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+br0: topology change detected, propagating
+br0: port 2(wlan1) entered forwarding state
+br0: topology change detected, propagating
+br0: port 3(wlan0) entered forwarding state
+Register to wlan1
+Register to wlan0
+msg str: [cfm Post time_check 4?relate_module_id=19,string_info=first_time_start]
+iwcontrol RegisterPID to (wlan1)
+iwcontrol RegisterPID to (wlan0)
+[1;31m[TIMER_CHECK >>init_time_check_module_var(149)]:[mkey = relate_module_id,value = 19
+[1;31m[TIMER_CHECK >>init_time_check_module_var(157)]:[mkey = string_info,value = first_time_start
+write_proc: file: 82f4f5a0, buffer: E
+, count: 2, data: 822aff10
+hzz_debug : wlioctl_set_led 256 flag = -2 
+wlioctl_set_led status [-2]
+hzz_debug : wlioctl_set_led 297 enable = 0 
+iptables: No chain/target/match by that nawrite_proc: file: 82f4eb40, buffer: 0
+, count: 2, data: 822cbf10
+me.
+WIFI led mode start
+------------------------>Wifi set led status 4 g_smart 1
+iptables v1.4.4: Couldn't find target `dmz_forward_pre'
+
+Try `iptables -h' or 'iptables --help' for more information.
+------------------------>Wifi set led status 4 g_smart 1
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `vpnserver'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `dmz_forward_post'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: Index of insertion too big.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `port_forward_pre'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.4: Couldn't find target `port_forward_post'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `web_wanadmin'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `web_wanadmin'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+killall: 3322ip: no process killed
+killall: 88ip: no process killed
+killall: gnway: no process killed
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+killall: inadyn: no process killed
+rm: can't remove '/etc/ddns_*': No such file or directory
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `MINIUPNPD'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+miniupnpd.c,865,ver=1.0,osname=Wireless Router,osver=1.0,osurl=http://192.168.0.1,manuft=Tenda,descri=
+RTNETLINK answers: No such file or directory
+dhcpsCfgToStruct 557: lan type is 
+dhcps_lan_dhcpc_configure 272: lan dhcp client not get ip
+insmod: can't insert '/lib/modules/ip_web_auth.ko': No such file or directory
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+bad:9 good:1 all:11 ,so turn 20M, force_sw(1)
+---td_deauth_all_sta---
+frag2_len=12
+open /dev/webauth failed.
+open /dev/webauth failed.
+open /dev/webauth failed.
+open /dev/webauth failed.
+load_pppoes_base_cfg,wannum:1
+
+load_pppoes_base_cfg,g_pap:1,g_chap:0
+main: msgqueue_id=196614
+msg str: [cfm Post netctrl 4?op=2]
+/bin/sh: /bin/qos_tool: not found
+[URL FILTER  ]  INFO: g_uf_enable = disable
+[URL FILTER  ]  INFO: g_uf_enable = disable
+[MAC FILTER  ]  INFO: g_mac_filter_enable = disable, mf_default_action = accept
+[MAC FILTER  ]  INFO: g_mac_filter_enable = disable, mf_default_action = accept
+qos qos_rcv_msg 261: ------APPLY---
+qos qos_rule_apply 525: g_qos_enable = disable
+qos qos_rcv_msg 289: ------AUTO_APPLY---
+qos set_wan_if 1125: wanid=0 up_rate=1024000 down_rate=0
+qos set_wan_if 1125: wanid=1 up_rate=0 down_rate=0
+qos set_wan_if 1125: wanid=2 up_rate=0 down_rate=0
+qos set_wan_if 1125: wanid=3 up_rate=0 down_rate=0
+Init gsbmac dev success.
+The ARP attack defence is init v1 successful
+killall: arpbrocast: no process killed
+Kernel:Init attack fence dev success.
+the ddos ip attack defnence init successful
+SET_LAN_PARAM_DATA k_data:
+	lan ip:3232235521
+	lan mask:4294967040
+	lan submask:3232235520
+	lan interface:br0
+	lan http port:80
+icmp is 1,1500,uset the proceee ture
+dp is 1,1500,tcpSET_IPOP_FENCE_ATTACK_DATA k_data:
+_syn is 1,1500
+	ip options:32512
+SET_BAD_PKT_FENCE_ATTACK_DATA k_data:
+	bad pkt:248
+SET_DDOS_FENCE_ATTACK_DATA k_data:
+	status:7
+	tcp threshold:1500
+	udp threshold:1500
+	icmp threshold:1500
+tpi_sntp_handle(99): start sntp...
+tpi_set_user_policy,35: entry count:0
+systime_server = 211.138.200.208
+main,335,sntp_en =1,tz=19.00,checktime=86400
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+[1;32m[ DEBUG ] [mlan dhcp not enable
+[1;32m[ DEBUG ] [m*****netctrl init module entries ok.*****
+[1;32m[ DEBUG ] [mmsg:55
+[1;32m[ DEBUG ] [mmsg:3?op=3
+[1;32m[ DEBUG ] [mkey = op,value = 3
+dhcpsCfgToStruct 557: lan type is 
+dhcps_lan_dhcpc_configure 272: lan dhcp client not get ip
+[1;32m[ DEBUG ] [mmsg:12?op=6
+[1;32m[ DEBUG ] [mkey = op,value = 6
+[1;32m[ DEBUG ] [mmsg:4?op=2
+[1;32m[ DEBUG ] [mkey = op,value = 2
+open /dev/webauth failed.
+open /dev/webauth failed.
+killall: pppoe-server: no process killed
+rmmod: can't unload 'ip_web_auth': unknown symbol in module, or unknown parameter
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+[1;32m[ DEBUG ] [mmsg:53?op=1
+[1;32m[ DEBUG ] [mkey = op,value = 1
+killall: dhttpd: no process killed
+ifconfig: SIOCSIFFLAGS: Cannot assign requested address
+ifconfig: SIOCSIFFLAGS: Cannot assign requested address
+********************************
+	goahead  3.3.0 start
+********************************
+goahead: 4: main----51
+
+goahead: 4: initPlatform----398
+
+goahead: 4: websOpen----233
+
+goahead: 0: Can't get host address for host Tenda: errno 124, use Local:127.0.0.1
+cgi/main.c check network 172.25.221.176 success
+dlan_ip:172.25.221.176
+endpoint[http://172.25.221.176:80]
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
+wlan1     rf_pwr:-0,0
+wlan0     rf_pwr:-0,0
