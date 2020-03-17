@@ -40,12 +40,12 @@ class Tendown:
             raise RuntimeError('Connection Error!')
         if r.status_code != 200:
             self.cookie = self.password
-        try:
-            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)
-        except:
-            raise RuntimeError('Connection Error!')
-        if r.status_code != 200:
-            raise RuntimeError('Unexpected status code %s! Something is wrong!' % (str(r.status_code)))
+            try:
+                r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)
+            except:
+                raise RuntimeError('Connection Error!')
+            if r.status_code != 200:
+                raise RuntimeError('Unexpected status code %s! Something is wrong!' % (str(r.status_code)))
 
     def firmware_update(self, filename):
         try:
@@ -101,7 +101,7 @@ if __name__ == "__main__":
 	except RuntimeError as e:
 		print(str(e))
 		sys.exit()
-	t.push_config('/mnt/Work/tenda/config.txt')
+	# t.push_config('/mnt/Work/tenda/config.txt')
 	# t.pull_config()
 	# t.firmware_update('/mnt/Work/tenda/upgrade.bin')
-	# t.change_creds('user', 'user')
+	t.change_creds('user', 'user')
