@@ -95,7 +95,7 @@ if __name__ == "__main__":
 	http_proxy="http://192.168.0.147:8080"
 	https_proxy="http://192.168.0.147:8080"
 	proxyDict = {"http":http_proxy, "https":https_proxy}
-	t = Tendown('192.168.0.1', '80', 'fuck', 'fuck')
+	t = Tendown('192.168.0.1', '80', 'user', 'user')
 	try:
 		t.login()
 	except RuntimeError as e:
@@ -104,4 +104,4 @@ if __name__ == "__main__":
 	# t.push_config('/mnt/Work/tenda/config.txt')
 	# t.pull_config()
 	# t.firmware_update('/mnt/Work/tenda/upgrade.bin')
-	t.change_creds('user', 'user')
+	# t.change_creds('user', 'user')
