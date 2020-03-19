@@ -16,6 +16,9 @@ class Tendown:
         self.username = username
         self.password = password
         self.cookie = password
+        self.http_proxy="http://192.168.0.147:8080"
+        self.https_proxy="http://192.168.0.147:8080"
+        self.proxyDict = {"http":self.http_proxy, "https":self.https_proxy}
 
     def login(self):
         # user will be logged out if already logged in, so do this at most twice
@@ -35,13 +38,13 @@ class Tendown:
 
     def post_request(self, url, pdata):
         try:
-            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)#, proxies=self.proxyDict)
         except:
             raise RuntimeError('Connection Error!')
         if r.status_code != 200:
             self.cookie = self.password
             try:
-                r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)
+                r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)#, proxies=self.proxyDict)
             except:
                 raise RuntimeError('Connection Error!')
             if r.status_code != 200:
@@ -102,6 +105,6 @@ if __name__ == "__main__":
 		print(str(e))
 		sys.exit()
 	# t.push_config('/mnt/Work/tenda/config.txt')
-	# t.pull_config()
+	t.pull_config()
 	# t.firmware_update('/mnt/Work/tenda/upgrade.bin')
 	# t.change_creds('user', 'user')
