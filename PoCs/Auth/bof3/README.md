@@ -8,4 +8,4 @@
 ![cause2](./bof3_SetStaticRouteCfg_cause_2.jpg)
 # Payload
 * This payload crashes the device with $pc == 0x626262
-![payload](./![cause1](./bof3_SetStaticRouteCfg_payload.png)
+![payload](./bof3_SetStaticRouteCfg_payload.png)
