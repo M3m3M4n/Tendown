@@ -4,7 +4,7 @@
 **By:** hnh49 of VCS
 # Vulnerability
 * Vulnerability exist in /goform/saveParentControlInfo handling module, 'time' parameter in request get parsed using sscanf lead to overflow.\
-![cause1](./bof2_saveParentControlInfo_cause_1.jpg)
+![cause1](./bof2_saveParentControlInfo_cause_1.jpg)\
 ![cause2](./bof2_saveParentControlInfo_cause_2.jpg)
 # Payload
 * This payload crashes the device with $pc == 0x626262
