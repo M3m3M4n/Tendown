@@ -7,5 +7,5 @@
 ![cause1](./bof6_SetClientState_cause_1.JPG)\
 ![cause2](./bof6_SetClientState_cause_2.JPG)
 # Payload
-* This payload crashes the device with $pc == 0x626262
+* This payload crashes the device with $pc == 0x61616161
 ![payload](./bof6_SetClientState_payload.PNG)
