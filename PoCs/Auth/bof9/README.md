@@ -6,5 +6,5 @@
 * Vulnerability exists in /goform/SetIpMacBind handling module, 'list' parameter get parsed with strcpy lead to overflow\
 ![cause1](./bof9_SetIpMacBind_cause.JPG)
 # Payload
-* This payload crashes the device with $pc == 0x626262
+* This payload crashes the device with $pc == 0x61616161
 ![payload](./bof9_SetIpMacBind_payload.PNG)
