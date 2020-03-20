@@ -6,4 +6,4 @@
 * Vulnerability exists in /goform/setUsbUnload handling module, 'deviceName' parameter is used directly in a system command\
 ![cause1](./cmdinject1_setUsbUnload_cause.jpg)
 # Payload
-![payload](./cmdinject1_setUsbUnload_cause.png)
+![payload](./cmdinject1_setUsbUnload_payload.png)
