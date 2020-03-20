@@ -6,5 +6,5 @@
 * Vulnerability exists in /goform/SetFirewallCfg handling module, 'firewallEn' parameter get parsed with strcpy lead to overflow\
 ![cause1](./bof8_SetFirewallCfg_cause.JPG)
 # Payload
-* This payload crashes the device with $pc == 0x626262
+* This payload crashes the device with $pc == 0x61616161
 ![payload](./bof8_SetFirewallCfg_payload.PNG)
